@@ -68,7 +68,7 @@ const StatsSection = () => {
           setInView(true);
         }
       },
-      { threshold: 0.5 } // Trigger when 50% of the section is visible
+      { threshold: 0.5 } 
     );
 
     if (sectionRef.current) {
@@ -85,13 +85,13 @@ const StatsSection = () => {
   return (
     <div
       ref={sectionRef}
-      className="bg-scroll bg-cover bg-center h-[70vh] flex items-center justify-center"
+      className="bg-scroll mt-18 bg-cover bg-center h-[70vh] flex items-center justify-center"
       style={{
         backgroundImage:
           "url('https://images.unsplash.com/photo-1660081516570-de4e4b3831fb?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
       }}
     >
-      <div className="bg-black/60 bg-opacity-70 w-full py-12">
+      <div className="bg-black/60 bg-no-repeat bg-fixed bg-opacity-70 w-full py-12">
         <div className="container mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center text-white">
           <div>
             <div className="text-yellow-500 text-4xl sm:text-5xl md:text-6xl mb-2">

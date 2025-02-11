@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone, Clock, Twitter } from "lucide-react";
+import hook from "./assets/hook.png"
 
 const Footer = () => {
   return (
@@ -38,20 +39,20 @@ const Footer = () => {
             itemProp="url"
           >
             <img
-              src="https://webdesign-finder.com/towy-v2/wp-content/uploads/2022/05/logo.png"
-              className="attachment-full"
+              src= {hook}
+              className="attachment-full w-9 h-18"
               alt=""
               decoding="async"
               loading="eager"
             /> </a>
                 
-                </span> 24/7 TOWY
+                </span> UNIVERSAL RECOVERY
           </h2>
-          <p className="text-gray-400 mt-4 leading-relaxed">
+          <p className="text-gray-400 mt-4 sm:text-sm leading-relaxed">
             Providing fast, affordable towing services since 1986. We are ready
             to assist you 24/7.
           </p>
-          <div className="flex space-x-5 mt-6 text-2xl">
+          <div className="flex justify-center space-x-5 mt-6 text-2xl">
             <a href="#" className="text-gray-400 hover:text-yellow-500">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -186,18 +187,17 @@ const Footer = () => {
           </h3>
           <ul className="mt-3 space-y-6 text-gray-400">
             <li className="flex items-center">
-              <MapPin className="text-yellow-500 mr-3" size={24} /> 2551 Alfred
-              Drive, Brooklyn, NY
+              <MapPin className="text-yellow-500 mr-3" size={16} /> 255 Kohefiza, Bhopal, MP
             </li>
             <li className="flex items-center">
-              <Phone className="text-yellow-500 mr-3" size={24} /> 718-250-4467
+              <Phone className="text-yellow-500 mr-3" size={16} /> +91 9131667821
             </li>
             <li className="flex items-center">
-              <Mail className="text-yellow-500 mr-3" size={24} />{" "}
-              support@towy.com
+              <Mail className="text-yellow-500 mr-3" size={16} />{" "}
+              universal@recovery.com
             </li>
             <li className="flex items-center">
-              <Clock className="text-yellow-500 mr-3" size={24} /> 24 hours a
+              <Clock className="text-yellow-500 mr-3" size={16} /> 24 hours a
               day, 7 days a week
             </li>
           </ul>
@@ -209,11 +209,11 @@ const Footer = () => {
           </h3>
           <ul className="mt-3 space-y-6 text-gray-400">
             <li className="flex items-center">
-              <Twitter className="text-yellow-500 mr-3" size={24} /> January 26,
+              <Twitter className="text-yellow-500 mr-3" size={16} /> January 26,
               2025 - 2:53 pm
             </li>
             <li className="flex items-center">
-              <Twitter className="text-yellow-500 mr-3" size={24} /> January 28,
+              <Twitter className="text-yellow-500 mr-3" size={16} /> January 28,
               2025 - 10:33 pm
             </li>
           </ul>
@@ -221,7 +221,7 @@ const Footer = () => {
       </div>
 
       <div className="border-t  bg-black/90 border-gray-700 text-center py-6 text-gray-400 text-xl">
-        24/7 Towy - Towing Services <span className="text-yellow-500">❤️</span>{" "}
+        UNIVERSAL RECOVERY - Towing Services <span className="text-yellow-500"></span>{" "}
         All Rights Reserved © 2025
       </div>
     </footer>

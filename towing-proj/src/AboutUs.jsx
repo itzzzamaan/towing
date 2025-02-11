@@ -1,6 +1,8 @@
 const AboutUs = () => {
+ 
   return (
     <>
+    
       <div className="flex flex-col md:flex-row items-center text-black text-center">
        
         <div className="bg-yellow-500 w-full flex-1 flex justify-center items-center py-5 px-8 font-semibold relative">
@@ -19,7 +21,7 @@ const AboutUs = () => {
             />
           </svg>
           <span>
-            LESS THAN <span className="font-bold">30 MIN</span> ARRIVAL
+            LESS THAN <span className="font-bold"> 30 MIN</span> ARRIVAL
           </span>
           <div className="absolute right-0 top-0 bottom-0 w-10 bg-yellow-500 "></div>
         </div>
@@ -27,7 +29,7 @@ const AboutUs = () => {
        
         <div className="bg-black w-full text-white flex-1 flex justify-center items-center py-5 px-8 font-semibold relative">
           <span>
-          <span className="text-yellow-500"> 0 (800)</span> <span className="font-bold text-yellow-500"> 490 45 45 </span>
+          <span className="text-yellow-500"> (+91 )</span> <span className="font-bold text-yellow-500"> 9131667821 </span>
           </span>
           <div className="mx-3 flex justify-center items-center bg-yellow-500 rounded-full">
         
@@ -79,8 +81,8 @@ const AboutUs = () => {
             <ul className="text-sm sm:text-lg md:text-lg text-gray-800 list-none space-y-4">
               <li className="flex items-center border-t border-gray-300 py-3">
                 <span className="text-yellow-400 text-xl mr-3">✔</span>
-                More than{" "}
-                <span className="font-bold">30 years of experience</span>
+                More than 
+                <span className="font-bold"> 30 years of experience</span>
               </li>
               <li className="flex items-center border-t border-gray-300 py-3">
                 <span className="text-yellow-400 text-xl mr-3">✔</span>

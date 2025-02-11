@@ -1,12 +1,17 @@
+import { useEffect } from "react";
 import BlogPage from "./BlogPage";
 import Footer from "./Footer";
 import Navbar from "./Navbar/Navbar";
 
 const Blog = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); 
+
   return (
     <div className="bg-gray-100">
       <Navbar />
-      <div className="text-3xl bg-yellow-400 mt-22 w-full text-center h-25 font-bold flex items-center justify-center">
+      <div className="text-3xl bg-yellow-400 mt-28 w-full text-center h-25 font-bold flex items-center justify-center">
         BLOG
       </div>
       <BlogPage />

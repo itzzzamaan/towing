@@ -1,11 +1,16 @@
 import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer";
+import { useEffect } from "react";
 const SingleContactPage = () => {
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []); 
+    
   return (
     <div className="bg-gray-100">
       <Navbar />
-      <div className="text-3xl bg-yellow-400 mt-22 w-full text-center h-25 font-bold flex items-center justify-center">
+      <div className="text-3xl bg-yellow-400 mt-28 w-full text-center h-25 font-bold flex items-center justify-center">
         CONTACT
       </div>
       <div className="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px]">
@@ -69,16 +74,15 @@ const SingleContactPage = () => {
             <div className="space-y-4 text-gray-700">
               <ul className="mt-3 space-y-6 text-gray-400">
                 <li className="flex items-center">
-                  <MapPin className="text-yellow-500 mr-3" size={24} /> 2551
-                  Alfred Drive, Brooklyn, NY
+                  <MapPin className="text-yellow-500 mr-3" size={24} /> 255 Kohefiza, Bhopal, MP
                 </li>
                 <li className="flex items-center">
                   <Phone className="text-yellow-500 mr-3" size={24} />{" "}
-                  718-250-4467
+                  +91 9131667821
                 </li>
                 <li className="flex items-center">
                   <Mail className="text-yellow-500 mr-3" size={24} />{" "}
-                  support@towy.com
+                  universal@recovery.com
                 </li>
                 <li className="flex items-center">
                   <Clock className="text-yellow-500 mr-3" size={24} /> 24 hours

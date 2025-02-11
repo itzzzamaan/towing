@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown, Settings, Image } from "lucide-react";
 import { Link } from "react-router-dom";
+import hook from "../assets/hook.png"
 
 const Navbar = () => {
   const [isPagesOpen, setIsPagesOpen] = useState(false);
@@ -22,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black/70 text-white fixed top-0 left-0 right-0 z-50 px-6 py-5 flex justify-center items-center shadow-lg">
-      <div className=" items-center hidden md:flex space-x-20">
+      <div className=" items-center hidden md:flex space-x-12">
       <Link to="/" className="text-md hover:text-yellow-500">
           Home
         </Link>
@@ -96,27 +97,23 @@ const Navbar = () => {
           )}
         </div>
 
-        <div className="items-center flex space-x-20">
+        <div className="items-center flex space-x-12 md:space-x-5">
           <a
-            className="logo logo-left with-image flex items-center"
-            href="https://webdesign-finder.com/towy-v2/"
-            rel="home"
-            itemProp="url"
+            className="flex items-center mr-0"
           >
             <img
-              src="https://webdesign-finder.com/towy-v2/wp-content/uploads/2022/05/logo.png"
-              className="attachment-full w-6 h-12"
+              src= {hook}
+              className=" w-9 h-18"
               alt=""
               decoding="async"
               loading="eager"
             />
-            <span className="logo-text ml-4 flex flex-col justify-between">
-              <span className=" text-yellow-400 font-bold text-xl">
-                24/7 TOWY
+            <span className=" ml-2 flex md:flex-row sm:flex-row  flex-col justify-between">
+              <span className=" text-yellow-400 font-bold text-md sm:text-sm">
+              UNIVERSAL RECOVERY 
+              
               </span>
-              <span className=" text-center text-sm text-white hover:text-yellow-400 mt-auto">
-                Towing Services
-              </span>
+              
             </span>
           </a>
         </div>
@@ -155,30 +152,16 @@ const Navbar = () => {
       </div>
 
       <div className=" right-4 md:hidden flex justify-between h-7 w-full gap-2 items-center px-4">
-        <div className="md:hidden items-center flex space-x-20 ">
-          <a
-            className="logo logo-left with-image flex items-center"
-            href="https://webdesign-finder.com/towy-v2/"
-            rel="home"
-            itemProp="url"
-          >
-            <img
-              src="https://webdesign-finder.com/towy-v2/wp-content/uploads/2022/05/logo.png"
-              className="attachment-full w-5 h-10 mt-2 mr-2"
-              alt=""
-              decoding="async"
-              loading="eager"
-            />
-            <span className=" flex flex-col justify-between">
-              <span className=" text-yellow-400 font-smibold text-lg">
-                24/7 TOWY
-              </span>
-              <div className=" text-center text-xs top-0 right-0 mt-0 text-white hover:text-yellow-400 ">
-                Towing Services
-              </div>
-            </span>
-          </a>
-        </div>
+      <div className="md:hidden items-center flex space-x-20 ">
+    <a className="logo logo-left with-image flex items-center">
+      <img src={hook} className="attachment-full w-7 h-14 mt-2 mr-2" alt="logo" />
+      <span className="flex flex-col justify-between">
+        <span className="text-yellow-400 font-semibold text-lg">
+          UNIVERSAL RECOVERY
+        </span>
+      </span>
+    </a>
+  </div>
         <div
           className="md:hidden cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
