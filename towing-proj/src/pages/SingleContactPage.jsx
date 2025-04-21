@@ -82,7 +82,7 @@ const SingleContactPage = () => {
                 </li>
                 <li className="flex items-center">
                   <Mail className="text-yellow-500 mr-3" size={24} />{" "}
-                  universal@recovery.com
+                  info@universalrecovery.uk
                 </li>
                 <li className="flex items-center">
                   <Clock className="text-yellow-500 mr-3" size={24} /> 24 hours

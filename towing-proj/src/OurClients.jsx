@@ -6,25 +6,25 @@ import { Navigation } from "swiper/modules";
 
 const testimonials = [
   {
-    name: "Lulu Russell",
-    role: "Director",
-    image: "https://randomuser.me/api/portraits/women/79.jpg",
+    name: "Fazil Mohammad",
+    role: "Reliable and Fast!",
+    image: "https://randomuser.me/api/portraits/men/48.jpg",
     quote:
-      "Meatloaf laborum velit kielbasa. Drumstick sirloin lorem chicken swine biltong in short ribs duis bresaola. Veniam meatloaf cow incididunt in bacon kevin in pork belly ball tip duis ipsum."
+      "I was stranded on the highway late at night, and they showed up within 20 minutes. Super friendly driver and great service. Highly recommend!"
   },
   {
-    name: "John Doe",
-    role: "Manager",
-    image: "https://randomuser.me/api/portraits/men/45.jpg",
+    name: "Iqbal Khan",
+    role: "Great Customer Service",
+    image: "https://randomuser.me/api/portraits/men/39.jpg",
     quote:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac libero id lacus scelerisque vehicula. Vivamus consectetur quam ut orci tristique, vitae facilisis nisl feugiat."
+      "They were polite, professional, and explained everything clearly. My car was towed safely and quickly. Couldn't ask for more."
   },
   {
-    name: "Emily Smith",
-    role: "CEO",
-    image: "https://randomuser.me/api/portraits/women/32.jpg",
+    name: "Falak Ahmed",
+    role: "Professional and Courteous",
+    image: "https://randomuser.me/api/portraits/women/15.jpg",
     quote:
-      "Suspendisse potenti. Donec ullamcorper, sapien non tincidunt vehicula, ex mi vehicula lacus, id tincidunt magna erat eu elit. Duis venenatis metus et lectus volutpat, ac ullamcorper lorem pretium."
+      "From the first call to the drop-off, everything was smooth. The truck was clean, and the driver was very respectful."
   }
 ];
 

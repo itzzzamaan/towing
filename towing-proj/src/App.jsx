@@ -1,5 +1,5 @@
 import AboutUs from "./AboutUs"
-import BlogPage from "./BlogPage"
+// import BlogPage from "./BlogPage"
 import DashForm from "./DashForm"
 import FaqPage from "./FaqPage"
 import FloatingBtn from "./Floating Buttons/FloatingBtn"
@@ -23,7 +23,7 @@ function App() {
      <StatsSection/>
      <OurServices/>
      <DashForm/>
-     <BlogPage/>
+     {/* <BlogPage/> */}
      <OurClients/>
      <FaqPage/>
      <FloatingBtn/>

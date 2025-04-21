@@ -94,9 +94,9 @@ const Navbar = () => {
           Gallery
         </Link>
 
-        <Link to="/blog" className="text-md hover:text-yellow-500">
+        {/* <Link to="/blog" className="text-md hover:text-yellow-500">
           Blog
-        </Link>
+        </Link> */}
 
         <Link to="/single-contact-page" className="text-md hover:text-yellow-500">
           Contacts

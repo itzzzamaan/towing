@@ -1,4 +1,4 @@
-import { Mail, MapPin, Phone, Clock, Twitter } from "lucide-react";
+import { Mail, MapPin, Phone, Clock } from "lucide-react";
 import hook from "./assets/hook.png"
 
 const Footer = () => {
@@ -27,7 +27,7 @@ const Footer = () => {
 </div>
 
 
-      <div className="container mx-auto px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-12 justify-items-center text-center md:text-left">
+<div className="max-w-screen-xl mx-auto px-6 sm:px-28 py-12 grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
         <div>
           <h2 className="text-yellow-500 font-bold text-2xl flex items-center">
             <span className="mr-3">
@@ -186,7 +186,7 @@ const Footer = () => {
             </li>
             <li className="flex items-center">
               <Mail className="text-yellow-500 mr-3" size={16} />{" "}
-              universal@recovery.com
+              info@universalrecovery.uk
             </li>
             <li className="flex items-center">
               <Clock className="text-yellow-500 mr-3" size={16} /> 24 hours a
@@ -195,7 +195,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div>
+        {/* <div>
           <h3 className="text-white font-bold text-2xl mb-4">
             LATEST <span className="text-yellow-500">TWEETS</span>
           </h3>
@@ -209,7 +209,7 @@ const Footer = () => {
               2025 - 10:33 pm
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
 
       <div className="border-t  bg-black/90 border-gray-700 text-center py-6 text-gray-400 text-xl">
