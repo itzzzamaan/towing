@@ -6,11 +6,11 @@ const SingleContactPage = () => {
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []); 
-    
+
   return (
     <div className="bg-gray-100">
       <Navbar />
-      <div className="text-3xl bg-yellow-400 mt-28 w-full text-center h-25 font-bold flex items-center justify-center">
+      <div className="text-3xl bg-yellow-400 mt-[68px] md:mt-28 w-full text-center h-25 font-bold flex items-center justify-center">
         CONTACT
       </div>
       <div className="w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[500px]">
@@ -78,7 +78,7 @@ const SingleContactPage = () => {
                 </li>
                 <li className="flex items-center">
                   <Phone className="text-yellow-500 mr-3" size={24} />{" "}
-                  +91 9131667821
+                  (+44) 73-9898-4847
                 </li>
                 <li className="flex items-center">
                   <Mail className="text-yellow-500 mr-3" size={24} />{" "}

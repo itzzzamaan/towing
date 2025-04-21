@@ -47,7 +47,7 @@ const OurClients = () => {
                     className="rounded-full border-4 border-yellow-500"
                   />
                 </div>
-                <p className="italic mt-4 w-[80%] m-auto text-gray-300">{testimonial.quote}</p>
+                <p className="italic mt-4 w-[70%] md:w-[90%] md:text-lg text-sm m-auto text-gray-300">{testimonial.quote}</p>
                 <h3 className="text-yellow-500 font-semibold mt-2">{testimonial.name}</h3>
                 <p className="text-gray-400">{testimonial.role}</p>
               </div>

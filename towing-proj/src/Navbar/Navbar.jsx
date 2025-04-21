@@ -1,5 +1,6 @@
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
-import { Menu, X, ChevronDown, Settings, Image } from "lucide-react";
+import { Menu, X, ChevronDown, Settings } from "lucide-react";
 import { Link } from "react-router-dom";
 import hook from "../assets/hook.png"
 
@@ -7,7 +8,7 @@ const Navbar = () => {
   const [isPagesOpen, setIsPagesOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [isGalleryOpen, setIsGalleryOpen] = useState(false);
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+ const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -28,43 +29,14 @@ const Navbar = () => {
           Home
         </Link>
 
-        <div
-          className="relative dropdown"
-          onMouseEnter={() => {
-            setIsPagesOpen(true);
-            setIsServicesOpen(false);
-            setIsGalleryOpen(false);
-          }}
-          onMouseLeave={() => setIsPagesOpen(false)}
-        >
-          <button className="text-md flex items-center hover:text-yellow-500">
-            Pages <ChevronDown className="ml-1" size={16} />
-          </button>
-          {isPagesOpen && (
-            <div className="absolute left-0 mt-2 w-64 bg-white text-black shadow-lg rounded-md py-2">
-              {[
-                "About",
-                "FAQ",
-                "Shop",
-                "Predefined Sections",
-                "Testimonials",
-                "404",
-              ].map((item, index, array) => (
-                <a
-                  key={index}
-                  href="#"
-                  className={`flex items-center px-6 py-3 text-lg hover:text-yellow-500 ${
-                    index !== array.length - 1 ? "border-b border-gray-300" : ""
-                  }`}
-                >
-                  <Settings className="mr-3 text-gray-500" size={18} /> {item}
-                </a>
-              ))}
-            </div>
-          )}
-        </div>
+        <Link to="/aboutus" className="text-md hover:text-yellow-500">
+          About Us
+        </Link>
 
-        <div
+
+       
+
+        {/* <div
           className="relative dropdown"
           onMouseEnter={() => {
             setIsServicesOpen(true);
@@ -95,7 +67,7 @@ const Navbar = () => {
               )}
             </div>
           )}
-        </div>
+        </div> */}
 
         <div className="items-center flex space-x-12 md:space-x-5">
           <a
@@ -118,29 +90,9 @@ const Navbar = () => {
           </a>
         </div>
 
-        <div
-          className="relative dropdown"
-          onMouseEnter={() => {
-            setIsGalleryOpen(true);
-            setIsPagesOpen(false);
-            setIsServicesOpen(false);
-          }}
-          onMouseLeave={() => setIsGalleryOpen(false)}
-        >
-          <button className="text-md flex items-center hover:text-yellow-500">
-            Gallery <ChevronDown className="ml-1" size={18} />
-          </button>
-          {isGalleryOpen && (
-            <div className="absolute left-0 mt-2 w-64 bg-white text-black shadow-lg rounded-md py-2">
-              <Link
-                to="/single-gallery"
-                className="flex items-center px-6 py-3 text-lg hover:text-yellow-500"
-              >
-                <Image className="mr-3 text-gray-500" size={18} /> Single Gallery
-              </Link>
-            </div>
-          )}
-        </div>
+        <Link to="/gallery" className="text-md hover:text-yellow-500">
+          Gallery
+        </Link>
 
         <Link to="/blog" className="text-md hover:text-yellow-500">
           Blog
@@ -162,6 +114,7 @@ const Navbar = () => {
       </span>
     </a>
   </div>
+  
         <div
           className="md:hidden cursor-pointer"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -186,7 +139,10 @@ const Navbar = () => {
         </Link>
           </li>
           <li>
-            <button
+             <Link to="/aboutus" className="text-md hover:text-yellow-500">
+              About Us
+            </Link>
+            {/* <button
               onClick={() => setIsPagesOpen(!isPagesOpen)}
               className="flex items-center justify-center w-full hover:text-yellow-500"
             >
@@ -209,9 +165,9 @@ const Navbar = () => {
                   </li>
                 ))}
               </ul>
-            )}
+            )} */}
           </li>
-          <li>
+          {/* <li>
             <button
               onClick={() => setIsServicesOpen(!isServicesOpen)}
               className="flex items-center justify-center w-full hover:text-yellow-500"
@@ -234,9 +190,12 @@ const Navbar = () => {
                 )}
               </ul>
             )}
-          </li>
+          </li> */}
           <li>
-            <button
+            <Link to="/gallery" className="text-md hover:text-yellow-500">
+              Gallery
+            </Link>
+            {/* <button
               onClick={() => setIsGalleryOpen(!isGalleryOpen)}
               className="flex items-center justify-center w-full hover:text-yellow-500"
             >
@@ -250,7 +209,7 @@ const Navbar = () => {
                   </a>
                 </li>
               </ul>
-            )}
+            )} */}
           </li>
           <li>
           <Link to="/blog" className="text-md hover:text-yellow-500">
@@ -264,6 +223,7 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+    
     </nav>
   );
 };

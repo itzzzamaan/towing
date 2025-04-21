@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState, useRef } from "react";
+import statsbg from "./assets/statsbg.jpg";
 
 const StatsSection = () => {
   const [stats, setStats] = useState({
@@ -87,8 +88,7 @@ const StatsSection = () => {
       ref={sectionRef}
       className="bg-scroll mt-18 bg-cover bg-center h-[70vh] flex items-center justify-center"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1660081516570-de4e4b3831fb?q=80&w=2075&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
+        backgroundImage: `url(${statsbg})`,
       }}
     >
       <div className="bg-black/60 bg-no-repeat bg-fixed bg-opacity-70 w-full py-12">

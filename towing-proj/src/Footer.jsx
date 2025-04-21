@@ -49,7 +49,7 @@ const Footer = () => {
                 </span> UNIVERSAL RECOVERY
           </h2>
           <p className="text-gray-400 mt-4 sm:text-sm leading-relaxed">
-            Providing fast, affordable towing services since 1986. We are ready
+            Providing fast, affordable universal breakdown recovery service. We are ready
             to assist you 24/7.
           </p>
           <div className="flex justify-center space-x-5 mt-6 text-2xl">
@@ -150,11 +150,7 @@ const Footer = () => {
                   Gallery
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-yellow-500">
-                  404
-                </a>
-              </li>
+              
             </ul>
             <ul className="space-y-6">
               <li>
@@ -162,11 +158,7 @@ const Footer = () => {
                   FAQ
                 </a>
               </li>
-              <li>
-                <a href="#" className="hover:text-yellow-500">
-                  Typography
-                </a>
-              </li>
+             
               <li>
                 <a href="#" className="hover:text-yellow-500">
                   Blog
@@ -190,7 +182,7 @@ const Footer = () => {
               <MapPin className="text-yellow-500 mr-3" size={16} /> 255 Kohefiza, Bhopal, MP
             </li>
             <li className="flex items-center">
-              <Phone className="text-yellow-500 mr-3" size={16} /> +91 9131667821
+              <Phone className="text-yellow-500 mr-3" size={16} /> (+44) 73-9898-4847
             </li>
             <li className="flex items-center">
               <Mail className="text-yellow-500 mr-3" size={16} />{" "}

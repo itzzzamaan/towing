@@ -11,7 +11,7 @@ const Blog = () => {
   return (
     <div className="bg-gray-100">
       <Navbar />
-      <div className="text-3xl bg-yellow-400 mt-28 w-full text-center h-25 font-bold flex items-center justify-center">
+      <div className="text-3xl bg-yellow-400 mt-[68px] md:mt-28 w-full text-center h-25 font-bold flex items-center justify-center">
         BLOG
       </div>
       <BlogPage />
